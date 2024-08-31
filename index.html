@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title" >facebook</h1>
+    <div class="container">
+        <div id="form-container">
+            <!-- Sign Up Form -->
+            <div id="signup-form" class="form-section">
+                <h1 style="text-align: center; font-weight: 100;">Sign Up to Facebook</h1>
+                <form>
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" required>
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" required>
+                    <button type="submit" id="signup-btn">Sign Up</button>
+                </form>
+                <p class="toggle-link">Already have an account? <a href="#" id="show-signin">Login</a></p>
+            </div>
+            
+            <!-- Sign In Form -->
+            <div id="signin-form" class="form-section hidden">
+                <h1 style="text-align: center; font-weight: 100;">Log in to Facebook</h1>
+                <form>
+                    <label for="signin-email">Email:</label>
+                    <input type="email" id="signin-email" required>
+                    <label for="signin-password">Password:</label>
+                    <input type="password" id="signin-password" required>
+                    <button type="submit" id="signin-btn">Login</button>
+                </form>
+                <p class="toggle-link">Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+            </div>
+        </div>
+
+        <!-- Alerts -->
+        <div id="alert" class="alert hidden"></div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
