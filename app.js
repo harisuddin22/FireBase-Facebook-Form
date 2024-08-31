@@ -52,12 +52,12 @@ const signIn = async (email, password) => {
         const user = userCredential.user;
         showAlert('User signed in successfully!', 'success');
         console.log('User signed in:', user);
+        window.location.href = "final.html";
     } catch (error) {
         if (error.message === 'Firebase: Error (auth/invalid-credential).') {
             error.message = "Email Does Not Exist"
         }
         showAlert('Error: ' + error.message, 'error');
-        console.log(error.message);
     }
 };
 
